@@ -115,7 +115,7 @@ int replace_vars(info_t *info)
 			continue;
 
 		if (!_strcmp(info->argv[i], "$?"))
-OBOBOB		{
+		{
 			replace_string(&(info->argv[i]),
 				_strdup(convert_number(info->status, 10, 0)));
 			continue;
@@ -152,4 +152,3 @@ int replace_string(char **old, char *new)
 	*old = new;
 	return (1);
 }
-
