@@ -105,9 +105,9 @@ int replace_alias(info_t *info)
  * Return: 1 if replaced, 0 otherwise
  */
 int replace_vars(info_t *info)
-OBOBOB{
+{
 	int i = 0;
-OBOBOB	list_t *node;
+	list_t *node;
 
 	for (i = 0; info->argv[i]; i++)
 	{
